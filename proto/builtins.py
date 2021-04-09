@@ -11,7 +11,7 @@ class Clock:
         return 0
 
     def __str__(self):
-        return "<PyroBuiltin $clock>"
+        return "<ProtoBuiltin $clock>"
 
 
 class Print:
@@ -23,7 +23,7 @@ class Print:
         return 1
 
     def __str__(self):
-        return "<PyroBuiltin $print>"
+        return "<ProtoBuiltin $print>"
 
 
 class PrintLine:
@@ -35,7 +35,7 @@ class PrintLine:
         return 1
 
     def __str__(self):
-        return "<PyroBuiltin $println>"
+        return "<ProtoBuiltin $println>"
 
 
 class Stringify:
@@ -47,5 +47,5 @@ class Stringify:
         return 1
 
     def __str__(self):
-        return "<PyroBuiltin $str>"
+        return "<ProtoBuiltin $str>"
 

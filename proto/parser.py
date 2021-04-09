@@ -16,9 +16,9 @@ class Parser:
             statements.append(self.declaration())
         return statements
 
-    # ----------------------------------------------------------------------
-    # Statement parsers.
-    # ----------------------------------------------------------------------
+    # ------------------ #
+    # Statement parsers. #
+    # ------------------ #
 
     def declaration(self):
         if self.match("VAR"):
@@ -170,9 +170,9 @@ class Parser:
         self.consume("SEMICOLON", "Expected ';' after expression.")
         return ExpressionStmt(expr)
 
-    # ----------------------------------------------------------------------
-    # Expression parsers.
-    # ----------------------------------------------------------------------
+    # ------------------- #
+    # Expression parsers. #
+    # ------------------- #
 
     def expression(self):
         return self.assignment()
@@ -301,9 +301,9 @@ class Parser:
             return GroupingExpr(expr)
         self.error("Invalid token. Expected an expression.")
 
-    # ----------------------------------------------------------------------
-    # Helpers
-    # ----------------------------------------------------------------------
+    # -------- #
+    # Helpers. #
+    # -------- #
 
     def match(self, *token_types):
         for token_type in token_types:
