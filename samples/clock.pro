@@ -1,5 +1,5 @@
 def fib(n) {
-    if n <= 1 {
+    if n < 2 {
         return n;
     }
     return fib(n - 1) + fib(n - 2);
@@ -7,6 +7,6 @@ def fib(n) {
 
 def $main() {
     var start_time = $clock();
-    fib(20);
+    echo fib(25);
     echo $clock() - start_time;
 }
